@@ -1,0 +1,11 @@
+{% extends 'menu.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <h1>Nouveau contact</h1>
+    <p>Nom : {{ contact.Nom }}</p>
+    <p>Email : {{ contact.email }}</p>
+    <p>Message : {{ contact.message | raw }}</p>
+
+{% endblock %}
